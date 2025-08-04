@@ -1,0 +1,157 @@
+/* Estilização do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #222; /* Fundo escuro */
+    color: #fff; /* Texto claro */
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1cd00; /* Cor de destaque ao passar o mouse */
+}
+
+/* Seção de banner */
+.banner {
+    background-color: #66ccff; /* Cor de fundo diferenciada (azul claro) */
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção de produtos */
+.produtos-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os itens */
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.produto-item {
+    background-color: #fff; /* Fundo branco */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px); /* Efeito ao passar o mouse */
+}
+
+.produto-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.produto-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.produto-item .preco {
+    font-size: 1.4rem;
+    color: #28a745; /* Cor para o preço */
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222; /* Fundo escuro */
+    color: #fff;
+    text-align: center; /* Texto centralizado */
+    padding: 1.5rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Design Responsivo Básico */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .banner h2 {
+        font-size: 2.5rem;
+    }
+
+    .produto-item {
+        width: 100%; /* Ocupa toda a largura em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+}
